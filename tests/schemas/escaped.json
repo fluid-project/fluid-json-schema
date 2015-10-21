@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Schema to test names that would otherwise conflict with the path handling",
+    "type":  "object",
+    "properties": {
+        "this/that": {
+            "type": "object",
+            "properties": {
+                "t/h/e/ /o/t/h/e/r": {
+                    "type": "object",
+                    "properties": {
+                        "required": {
+                            "type": "boolean"
+                        }
+                    },
+                    "required": ["required"]
+                }
+            },
+            "required": ["t/h/e/ /o/t/h/e/r"]
+        },
+        "s/good/bad/g": {
+            "type": "string"
+        }
+    },
+    "required" : ["s/good/bad/g"]
+}

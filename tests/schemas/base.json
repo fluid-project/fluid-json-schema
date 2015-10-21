@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id":      "base.json",
+    "title":   "Example Base Schema",
+    "type":    "object",
+    "definitions": {
+        "required": {
+            "type": "boolean"
+        },
+        "boolean": {
+            "type": "boolean"
+        },
+        "date": {
+            "type":   "string",
+            "format": "date"
+        },
+        "number": {
+            "type":     "number",
+            "minValue": 1,
+            "maxValue": 10
+        },
+        "array": {
+            "type": "array",
+            "items": {"type": "boolean" }
+        },
+        "regex": {
+            "type":    "string",
+            "pattern": "^v.l.d$"
+        },
+        "password": {
+          "allOf": [
+            { "type": "string", "description": "The password must be at least 8 characters long.", "minLength": 8 },
+            { "type": "string", "description": "The password must have at least one uppercase letter.", "pattern": "[A-Z]+"},
+            { "type": "string", "description": "The password must have at least one lowercase letter.", "pattern": "[a-z]+"},
+            { "type": "string", "description": "The password must have at least one number or special character.", "pattern": "[^a-zA-Z]"}
+          ]
+        }
+    },
+    "properties": {
+        "required": { "$ref": "#/definitions/required" },
+        "boolean":  { "$ref": "#/definitions/boolean" },
+        "date":     { "$ref": "#/definitions/date"},
+        "number":   { "$ref": "#/definitions/number"},
+        "array":    { "$ref": "#/definitions/array"},
+        "password": { "$ref": "#/definitions/password"},
+        "regex":    { "$ref": "#/definitions/regex"}
+    },
+    "required": ["required"]
+}
