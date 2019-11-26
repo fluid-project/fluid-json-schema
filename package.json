@@ -20,16 +20,16 @@
         "ajv": "6.10.2",
         "gpii-binder": "1.0.6",
         "gpii-express": "1.0.15",
-        "gpii-handlebars": "2.1.0-dev.20191014T141924Z.45a74ef.GPII-4100",
-        "infusion": "3.0.0-dev.20191009T141140Z.32c9263b4.FLUID-6148",
-        "kettle": "1.11.0"
+        "gpii-handlebars": "2.1.0-dev.20191125T145645Z.2c6f7a2.GPII-4100",
+        "infusion": "3.0.0-dev.20191126T121754Z.6452de06f.FLUID-6145",
+        "kettle": "1.12.0-dev.20191125T152958Z.c571ba7.FLUID-6145"
     },
     "devDependencies": {
         "eslint": "6.5.1",
         "eslint-config-fluid": "1.4.0",
         "foundation-sites": "6.4.1",
         "gpii-grunt-lint-all": "1.0.5",
-        "gpii-testem": "2.1.11-dev.20191003T113129Z.477bcc0.GPII-4156",
+        "gpii-testem": "2.1.11",
         "grunt": "1.0.4",
         "handlebars": "4.4.3",
         "markdown-it": "10.0.0",
@@ -38,6 +38,6 @@
         "nyc": "14.1.1",
         "request": "2.88.0",
         "rimraf": "3.0.0",
-        "testem": "2.17.0"
+        "testem": "3.0.1"
     }
 }
