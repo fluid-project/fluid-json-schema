@@ -47,7 +47,7 @@ var testemComponent = fluid.testem.instrumentation({
     testemOptions: {
         // Disable Headless Chrome we can figure out a solution to this issue: https://issues.fluid.net/browse/fluid-4064
         // Running Testem with the HEADLESS environment variable still works, and still runs headless.
-        skip: "PhantomJS,Safari,IE,Headless Chrome"
+        skip: "PhantomJS,Safari,IE,Headless Chrome,Chromium"
     },
     components: {
         express: {
