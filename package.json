@@ -31,7 +31,7 @@
         "foundation-sites": "6.6.3",
         "fluid-lint-all": "1.0.0",
         "fluid-testem": "2.1.14",
-        "handlebars": "4.7.6",
+        "handlebars": "4.7.7",
         "markdown-it": "11.0.0",
         "node-jqunit": "1.1.8",
         "nyc": "15.1.0",
